@@ -41,14 +41,15 @@ module.exports = {
         ],
         alias: {
             '@components': [path.resolve(__dirname,'./src/components')],
-            '@context': [path.resolve(__dirname,'./src/context')],
+            '@contexts': [path.resolve(__dirname,'./src/contexts')],
+            '@containers': [path.resolve(__dirname,'./src/containers')],
         }
     },
     devServer: {
         static: {
             directory: path.resolve(__dirname, './dist')
         },
-        port: 4001,
+        port: 4002,
         server: {
             type: 'https'
         },
