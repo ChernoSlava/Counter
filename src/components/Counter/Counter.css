@@ -1,0 +1,20 @@
+.Counter {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.Counter_zero {
+
+    color: black;
+
+}
+
+.Counter_lesszero {
+    color: red;
+}
+
+.Counter_abovezero {
+    color: green;
+}
+
