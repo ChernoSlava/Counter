@@ -1,7 +1,14 @@
 import React from "react";
+import styles from './Button.css';
 
-export const Button = () => {
+const typeCss = {
+    'increase': styles.Button_increase,
+    'decrease': styles.Button_decrease,
+    'reset': styles.Button_reset
+};
+
+export const Button = ({ title, type }) => {
     return (
-        <button>I'm button</button>
+        <button className={`${styles.Button} ${typeCss[type] || styles.Button_increase}`}>{title}</button>
     )
 }
