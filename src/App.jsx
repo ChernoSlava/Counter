@@ -1,8 +1,8 @@
 import React, { useReducer } from "react";
-import { CounterContainer } from "@containers";
+import { CounterContainer, ButtonsContainer } from "@containers";
 import { CounterContext } from '@contexts';
 import styles from './App.css';
-import { Button } from './components/Button/Button'
+
   const CounterReducer = (state, action) => {
     const { type } = action;
 
@@ -48,9 +48,7 @@ export const App = () => {
         <div className={styles.App}>
             <CounterContainer />
             <div className={styles.App__buttons}>
-                <Button title="Уменьшить" type='decrease' onClick={() => dispatch({ type: "DECREASE" })}/>
-                <Button title="Сбросить" type='reset' onClick={() => dispatch({ type: "RESET" })}/>
-                <Button title="Увеличить" type='increase' onClick={() => dispatch({ type: "INCREASE" })} />
+                <ButtonsContainer />
             </div>
         </div>
         </CounterContext.Provider>
