@@ -1,6 +1,7 @@
 import React from "react";
+import { CounterContextType } from '@types';
 
-export const CounterContextInitialValue = {
+export const CounterContextInitialValue: CounterContextType = {
     state: {
         counterValue: 0
     },
