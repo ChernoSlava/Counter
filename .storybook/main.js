@@ -2,7 +2,7 @@ const webpack = require("webpack");
 
 module.exports = {
     "stories": [
-        "../src/**/*.stories.jsx"
+        "../src/**/*.stories.tsx"
     ],
     "core": {
         "builder": "webpack5"
