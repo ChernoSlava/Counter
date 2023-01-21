@@ -1,7 +1,7 @@
 import { CounterStateType, Action, ActionKind } from '@types';
 
 export const CounterReducer = (
-    state: CounterStateType, 
+    state: CounterStateType = InitialState, 
     action: Action
     ): CounterStateType => {
         
@@ -33,6 +33,6 @@ export const CounterReducer = (
     }
 }
 
-export const InitialCounter: CounterStateType = {
+export const InitialState: CounterStateType = {
     value: 0
 }
