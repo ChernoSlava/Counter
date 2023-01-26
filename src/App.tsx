@@ -1,24 +1,27 @@
 import React from "react";
 import { Provider } from "react-redux";
 
-import styles from './App.css';
-
 import { CounterContainer, ButtonsContainer } from "@containers";
 import { store } from "@store";
+import { GlobalStyles } from "styles/GlobalStyles";
+import { AppButtons, AppStyled } from "styled";
 
 
 
 export const App = () => {
   
     return(
-        <Provider store={store}>
-            <div className={styles.App}>
-                <CounterContainer />
-                <div className={styles.App__buttons}>
-                    <ButtonsContainer />
-                </div>
-            </div>
-        </Provider>
+        <>  
+            <GlobalStyles />
+            <Provider store={store}>
+                <AppStyled>
+                    <CounterContainer />
+                    <AppButtons>
+                        <ButtonsContainer />
+                    </AppButtons>
+                </AppStyled>
+            </Provider></>
+
         
     )
 }

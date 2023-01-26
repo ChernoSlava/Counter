@@ -11,13 +11,13 @@ export const CounterReducer = (
         case ActionKind.Increase: {
             return {
                 ...state,
-                value: state.value + 1
+                value: state.value + Number(COUNTER_STEP)
             };
         }
         case ActionKind.Decrease: {
             return {
                 ...state,
-                value: state.value - 1
+                value: state.value - Number(COUNTER_STEP)
             };
         }
         case ActionKind.Reset: {
