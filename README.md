@@ -18,6 +18,7 @@
 - Babel,
 - StoryBook,
 - TypeScript,
+- Redux,
 - dotenv,
 - Styled Components;
 
