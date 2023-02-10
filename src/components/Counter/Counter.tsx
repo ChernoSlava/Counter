@@ -1,6 +1,5 @@
 import React from "react";
-import styles from './Counter.css';
-import { CounterStyled, CounterType,  } from "./styled";
+import { CounterStyled, CounterType } from "./styled";
 
 export const Counter: React.FC<{
     title: string;
