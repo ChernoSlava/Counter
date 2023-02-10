@@ -19,6 +19,7 @@
 - StoryBook,
 - TypeScript,
 - Redux,
+- dotenv,
 - Styled Components;
 
 
@@ -33,7 +34,7 @@
 
 Для установки на ваш компьютер нужно на локальном компьютере выполнить команду: 
 
-- `git clone ${Специальная сылка на этот проект в репозитории}` - Для копирования проекта на локальный пк по ssh или https;
+- `git clone https://github.com/ChernoSlava/counter.git` - Для копирования проекта на локальный пк по ssh или https;
 
 После этого в консоли нужно выполнить: 
 
@@ -54,6 +55,8 @@
 2) [Репозиторий проекта Место на чистом js.](https://github.com/ChernoSlava/Mesto)
 3) [Репозиторий полноценного доработанного проекта Место Frontend и Backend.](https://github.com/ChernoSlava/react-mesto-api-full)
 4) [Дипломный проект Movies explorer](https://github.com/ChernoSlava/movies-explorer-frontend)
+=======
+
 ### Проекты созданные при обучении и менторстве senior web developer Абретова А.
 
 1) [Counter](https://github.com/ChernoSlava/counter)
@@ -63,3 +66,4 @@
 4) [Fish gallery](https://github.com/ChernoSlava/fish-gallery)
 5) [Рефакторинг дипломного проекта Movies explorer](https://github.com/ChernoSlava/Movies-exlorer-refactor)
 ---
+
