@@ -1,5 +1,4 @@
 import React from "react";
-import styles from './Button.css';
 import { ButtonStyled, ButtonType } from "./styled";
 
 export const Button: React.FC<{
@@ -8,6 +7,8 @@ export const Button: React.FC<{
     onClick: () => void;
 }> = ({ title, type, ...props}): JSX.Element => {
     return (
-        <ButtonStyled renderType={type} {...props}>{title}</ButtonStyled>
+        <ButtonStyled renderType={type} {...props}>
+            {title}
+        </ButtonStyled>
     )
 }
