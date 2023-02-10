@@ -17,7 +17,10 @@
 - Webpack,
 - Babel,
 - StoryBook,
-- TypeScript;
+- TypeScript,
+- Redux,
+- Styled Components;
+
 
 ---
 ## Установка и запуск
