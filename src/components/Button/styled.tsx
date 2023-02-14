@@ -1,31 +1,37 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export type ButtonType = 'increase' | 'decrease' | 'reset';
 
 export const ButtonStyled = styled.button<{
-    renderType: ButtonType
+  renderType: ButtonType;
 }>`
-    border: 1px solid aqua;
-    border-radius: 6px;
-    background-color: transparent;
-    width: 140px;
-    height: 47px;
-    cursor: pointer;
-    ${props => props.renderType === 'increase' && `
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  ${props =>
+    props.renderType === 'increase' &&
+    `
         background-color: aquamarine;
     `}
-    ${props => props.renderType === 'decrease' && `
+  ${props =>
+    props.renderType === 'decrease' &&
+    `
         background-color: indianred;
     `}
-    ${props => props.renderType === 'reset' && `
+    ${props =>
+    props.renderType === 'reset' &&
+    `
         background-color: darkgrey;
     `}
     &:hover {
-        opacity: 0.5;
-    }
+    opacity: 0.5;
+  }
 
-    /* Медиа запросы делаются так */
-    /* @media (max-width: 768px ) {
+  /* Медиа запросы делаются так */
+  /* @media (max-width: 768px ) {
         background-color: #0c7351
     } */
 `;
