@@ -1,4 +1,9 @@
-export { CounterReducer, InitialState } from './CounterReducer';
+export {
+  CounterSliceReducer,
+  InitialState as InitialCounter,
+  increase,
+  decrease,
+  reset,
+} from './CounterSlice';
 export { store } from './store';
-export { DecreaseAction, IncreaseAction, ResetAction } from './Actions';
 export { getCounterContainerPropsSelector } from './selectors';
