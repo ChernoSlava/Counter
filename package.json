@@ -10,7 +10,9 @@
     "start:prod": "cross-env NODE_ENV=production webpack serve",
     "storybook": "start-storybook -p 6007",
     "eslint": "eslint ./src",
-    "eslint:fix": "eslint --fix ./src"
+    "eslint:fix": "eslint --fix ./src",
+    "test": "jest",
+    "test:coverage": "jest --collect-coverage"
   },
   "repository": {
     "type": "git",
