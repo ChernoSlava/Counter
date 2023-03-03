@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ThemeType } from '@theme';
 
 export type CounterType = 'zero' | 'lesszero' | 'abovezero';
 
@@ -11,35 +12,16 @@ export const CounterStyled = styled.div<{
   ${props =>
     props.type === 'abovezero' &&
     `
-        color: green;
+        color: ${(props.theme as ThemeType).colors.green10};
     `}
   ${props =>
     props.type === 'lesszero' &&
     `
-        color: red;
+        color: ${(props.theme as ThemeType).colors.red10};
     `}
     ${props =>
     props.type === 'zero' &&
     `
-        color: black;
+        color: ${(props.theme as ThemeType).colors.black};
     `}
 `;
-// .Counter {
-//     font-size: 24px;
-//     color: black;
-//     font-weight: bold;
-// }
-
-// .Counter_zero {
-
-//     color: black;
-
-// }
-
-// .Counter_lesszero {
-//     color: red;
-// }
-
-// .Counter_abovezero {
-//     color: green;
-// }
