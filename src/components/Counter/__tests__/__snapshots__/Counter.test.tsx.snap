@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter tests should render correct counter type abovezero 1`] = `
+.c0 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  color: green;
+}
+
+<div>
+  <div
+    class="c0"
+    type="abovezero"
+  >
+    5
+  </div>
+</div>
+`;
+
+exports[`Counter tests should render correct counter type lesszero 1`] = `
+.c0 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  color: red;
+}
+
+<div>
+  <div
+    class="c0"
+    type="lesszero"
+  >
+    -2
+  </div>
+</div>
+`;
+
+exports[`Counter tests should render correct counter type zero 1`] = `
+.c0 {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  color: black;
+}
+
+<div>
+  <div
+    class="c0"
+    type="zero"
+  >
+    0
+  </div>
+</div>
+`;
