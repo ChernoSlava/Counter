@@ -23,7 +23,7 @@ exports[`Counter tests should render correct counter type lesszero 1`] = `
   font-size: 24px;
   color: black;
   font-weight: bold;
-  color: red;
+  color: indianred;
 }
 
 <div>

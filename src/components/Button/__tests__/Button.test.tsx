@@ -2,16 +2,21 @@
 /* eslint-disable no-undef */
 import { render, fireEvent } from '@testing-library/react';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+
+import { theme } from '../../../theme';
 import { Button, ButtonProps } from '../Button';
 
 const getUI = (props?: ButtonProps): JSX.Element => {
   return (
-    <Button
-      title="I am button"
-      type="decrease"
-      onClick={jest.fn()}
-      {...(props || {})}
-    />
+    <ThemeProvider theme={theme}>
+      <Button
+        title="I am button"
+        type="decrease"
+        onClick={jest.fn()}
+        {...(props || {})}
+      />
+    </ThemeProvider>
   );
 };
 

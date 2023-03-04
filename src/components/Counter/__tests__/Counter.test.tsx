@@ -1,12 +1,18 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-undef */
 import { render } from '@testing-library/react';
-
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
+
+import { theme } from '../../../theme';
 import { Counter, CounterProps } from '../Counter';
 
 const getUI: React.FC<CounterProps> = (props?: CounterProps): JSX.Element => {
-  return <Counter title="0" type="zero" {...(props || {})} />;
+  return (
+    <ThemeProvider theme={theme}>
+      <Counter title="0" type="zero" {...(props || {})} />
+    </ThemeProvider>
+  );
 };
 
 describe('Counter tests', () => {
