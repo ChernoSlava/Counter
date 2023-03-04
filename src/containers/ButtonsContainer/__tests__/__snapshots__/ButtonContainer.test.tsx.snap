@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonContainer test should call decrease action 1`] = `
+[
+  {
+    "payload": undefined,
+    "type": "counter/decrease",
+  },
+]
+`;
+
+exports[`ButtonContainer test should render 1`] = `
+.c0 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: indianred;
+}
+
+.c0:hover {
+  opacity: 0.5;
+}
+
+.c1 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: darkgrey;
+}
+
+.c1:hover {
+  opacity: 0.5;
+}
+
+.c2 {
+  border: 1px solid aqua;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 140px;
+  height: 47px;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.c2:hover {
+  opacity: 0.5;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    Уменьшить
+  </button>
+  <button
+    class="c1"
+  >
+    Сбросить
+  </button>
+  <button
+    class="c2"
+  >
+    Увеличить
+  </button>
+</div>
+`;
