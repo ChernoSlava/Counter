@@ -35,12 +35,40 @@ describe('ButtonContainer test', () => {
       ...InitialCounter,
     });
 
-    const { getByText } = render(getUI(store))
+    const { getByText } = render(getUI(store));
 
     const button = getByText('Уменьшить');
-    
+
     fireEvent.click(button);
 
     expect(store.getActions()).toMatchSnapshot();
-  })
+  });
+
+  it('should call increase action', () => {
+    const store = mockStore({
+      ...InitialCounter,
+    });
+
+    const { getByText } = render(getUI(store));
+
+    const button = getByText('Увеличить');
+
+    fireEvent.click(button);
+
+    expect(store.getActions()).toMatchSnapshot();
+  });
+
+  it('should call reset action', () => {
+    const store = mockStore({
+      ...InitialCounter,
+    });
+
+    const { getByText } = render(getUI(store));
+
+    const button = getByText('Сбросить');
+
+    fireEvent.click(button);
+
+    expect(store.getActions()).toMatchSnapshot();
+  });
 })
