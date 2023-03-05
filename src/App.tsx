@@ -1,6 +1,8 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import { ThemeProvider } from 'styled-components';
 
+import { theme } from '@theme';
 import { CounterContainer, ButtonsContainer } from '@containers';
 import { store } from '@store';
 import { GlobalStyles } from './styles/GlobalStyles';
@@ -11,12 +13,14 @@ export const App = () => {
     <>
       <GlobalStyles />
       <Provider store={store}>
-        <AppStyled>
-          <CounterContainer />
-          <AppButtons>
-            <ButtonsContainer />
-          </AppButtons>
-        </AppStyled>
+        <ThemeProvider theme={theme}>
+          <AppStyled>
+            <CounterContainer />
+            <AppButtons>
+              <ButtonsContainer />
+            </AppButtons>
+          </AppStyled>
+        </ThemeProvider>
       </Provider>
     </>
   );
