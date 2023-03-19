@@ -1,18 +1,19 @@
 import React from 'react';
-import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 
 import { theme } from '@theme';
 import { CounterContainer, ButtonsContainer } from '@containers';
-import { store } from '@store';
+import { CounterContext, CounterStore } from '@store';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { AppButtons, AppStyled } from './styled';
+
+
 
 export const App = () => {
   return (
     <>
       <GlobalStyles />
-      <Provider store={store}>
+      <CounterContext.Provider value={new CounterStore()}>
         <ThemeProvider theme={theme}>
           <AppStyled>
             <CounterContainer />
@@ -21,7 +22,7 @@ export const App = () => {
             </AppButtons>
           </AppStyled>
         </ThemeProvider>
-      </Provider>
+      </CounterContext.Provider>
     </>
   );
 };

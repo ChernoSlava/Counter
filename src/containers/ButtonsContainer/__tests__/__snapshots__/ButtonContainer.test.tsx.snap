@@ -1,32 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonContainer test should call decrease action 1`] = `
-[
-  {
-    "payload": undefined,
-    "type": "counter/decrease",
-  },
-]
-`;
-
-exports[`ButtonContainer test should call increase action 1`] = `
-[
-  {
-    "payload": undefined,
-    "type": "counter/increase",
-  },
-]
-`;
-
-exports[`ButtonContainer test should call reset action 1`] = `
-[
-  {
-    "payload": undefined,
-    "type": "counter/reset",
-  },
-]
-`;
-
 exports[`ButtonContainer test should render 1`] = `
 .c0 {
   border: 1px solid aqua;

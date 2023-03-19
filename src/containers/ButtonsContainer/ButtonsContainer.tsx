@@ -1,25 +1,25 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useContext } from 'react';
 
 import { Button } from '@components';
-import { increase, decrease, reset } from '@store';
+import { CounterContext } from '@store';
+import { observer } from 'mobx-react-lite';
 
-export const ButtonsContainer: React.FC = (): JSX.Element => {
-  const dispatch = useDispatch();
+export const ButtonsContainer: React.FC = observer ((): JSX.Element => {
+  const counter = useContext(CounterContext);
 
   return (
     <>
       <Button
         title="Уменьшить"
         type="decrease"
-        onClick={() => dispatch(decrease())}
+        onClick={() => counter.decrease()}
       />
-      <Button title="Сбросить" type="reset" onClick={() => dispatch(reset())} />
+      <Button title="Сбросить" type="reset" onClick={() => counter.reset()} />
       <Button
         title="Увеличить"
         type="increase"
-        onClick={() => dispatch(increase())}
+        onClick={() => counter.increase()}
       />
     </>
   );
-};
+});
